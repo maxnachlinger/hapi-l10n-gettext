@@ -48,7 +48,7 @@ test("getHeaderLocale can parse a complex accept-language header value", functio
 
 function setup(t) {
 	languageLoader.setup({
-		poDirectory: path.join(__dirname, '/locales')
+		poDirectory: path.join(__dirname, '/fixtures/locales')
 	}, function (err, locales) {
 		t.notOk(err, "Setup should not return an error, received: " + util.format(err));
 		t.ok(locales, "Setup returned locales: " + util.format(locales));

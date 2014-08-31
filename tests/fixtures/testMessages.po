@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Language: test"
+"MIME-Version: 1.0"
+"Content-Type: text/plain; charset=UTF-8"
+"Content-Transfer-Encoding: 8bit"
+"Plural-Forms: nplurals=2; plural=(n != 1);"
+
+msgid "test - Simple string"
+msgstr "test - Simple string translated"
+
+msgid "test - 1 string place-holder: %s"
+msgstr "test - 1 string place-holder: %s translated"
+
+msgid "test - 1 string, 1 int place-holder: %s, %d"
+msgstr "test - 1 string, 1 int place-holder: %s, %d translated"
+
+msgid "test - Simple string singular"
+msgstr[0] "test - Simple string translated"
+msgstr[1] "test - Simple string translated plural"
+
+msgid "test - Simple string singular int place-holder: %d"
+msgstr[0] "test - Simple string translated int place-holder: %d"
+msgstr[1] "test - Simple string translated plural int place-holder: %d"
+
+msgctxt "test - Test Context"
+msgid "test - Simple string in context"
+msgstr "test - Simple string in context translated"
+
+msgctxt "test - Test Context"
+msgid "test - Simple string singular in context int place-holder: %d"
+msgstr[0] "test - Simple string in context  translated int place-holder: %d"
+msgstr[1] "test - Simple string in context translated plural int place-holder: %d"
