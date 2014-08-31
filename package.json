@@ -1,22 +1,22 @@
 {
-  "name": "l8n-gettext",
-  "version": "0.0.0",
-  "description": "",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Max Nachlinger <max@somewhere.com>",
-  "license": "ISC",
-  "dependencies": {
-    "async": "^0.9.0",
-    "extsprintf": "^1.2.0",
-    "hoek": "^2.4.1",
-    "locale": "0.0.17",
-    "node-gettext": "^0.2.14",
-    "recursive-readdir": "^1.2.0"
-  },
-  "devDependencies": {
-    "tape": "^2.14.0"
-  }
+	"name": "l8n-gettext",
+	"version": "0.0.0",
+	"description": "",
+	"main": "lib/index.js",
+	"scripts": {
+		"test": "node tests/**.js"
+	},
+	"author": "Max Nachlinger <max@somewhere.com>",
+	"license": "ISC",
+	"dependencies": {
+		"async": "^0.9.0",
+		"extsprintf": "^1.2.0",
+		"hoek": "^2.4.1",
+		"locale": "0.0.17",
+		"node-gettext": "^0.2.14",
+		"recursive-readdir": "^1.2.0"
+	},
+	"devDependencies": {
+		"tape": "^2.14.0"
+	}
 }
