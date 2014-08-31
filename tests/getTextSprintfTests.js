@@ -5,7 +5,7 @@ var GetTextSprintf = require('../lib/getTextSprintf');
 var fns;
 
 test('Setup', function(t) {
-	fns = new GetTextSprintf("test", fs.readFileSync(path.join(__dirname, '/fixtures/testMessages.po')));
+	fns = new GetTextSprintf("test", fs.readFileSync(path.resolve(__dirname, 'fixtures/testMessages.po')));
 	t.end();
 });
 
