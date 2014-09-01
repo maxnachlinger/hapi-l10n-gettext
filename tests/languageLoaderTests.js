@@ -11,7 +11,7 @@ test("setup returns locales found in PO files (and language names from language_
 			return locale.code;
 		});
 
-		['en', 'zh_CN', 'zh_TW', 'zh'].forEach(function(locale) {
+		['en', 'zh_CN', 'zh_TW'].forEach(function(locale) {
 			t.ok(~localeCodes.indexOf(locale), "Found " + locale);
 		});
 
@@ -35,8 +35,8 @@ test("getHeaderLocale can parse a complex accept-language header value", functio
 		selectedLanguage = languageLoader.getHeaderLocale(headerValue);
 		t.equal(selectedLanguage, expectedLanguage, "If the user's first choice is supported, it will be returned.");
 
-		headerValue = "test0,test1;q=0.8,test2;q=0.6,test3;q=0.4,zh;q=0.2";
-		expectedLanguage = 'zh';
+		headerValue = "test0,test1;q=0.8,test2;q=0.6,test3;q=0.4,zh_TW;q=0.2";
+		expectedLanguage = 'zh_TW';
 		selectedLanguage = languageLoader.getHeaderLocale(headerValue);
 		t.equal(selectedLanguage, expectedLanguage, "If only the user's last choice is supported, it will be returned.");
 
