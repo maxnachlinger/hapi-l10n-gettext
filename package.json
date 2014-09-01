@@ -11,6 +11,7 @@
 	"dependencies": {
 		"async": "^0.9.0",
 		"extsprintf": "^1.2.0",
+		"gettext-parser": "^0.2.0",
 		"hoek": "^2.4.1",
 		"locale": "0.0.17",
 		"node-gettext": "^0.2.14",
