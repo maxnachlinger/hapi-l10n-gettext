@@ -1,0 +1,25 @@
+{{> header}}
+<script>
+	(function (win) {
+		win.onload = function () {
+			var selectPicker = win.document.getElementById('languageSelect');
+			selectPicker.addEventListener('change', function (event) {
+				win.document.location = "/locale/" + event.target.value;
+			});
+		};
+	})(window);
+</script>
+<div>
+	<select id="languageSelect" class="form-element">
+		{{#each l10n.locales}}
+		<option value="{{code}}"{{#if selected}} selected{{/if}}>{{name}}</option>
+		{{/each}}
+	</select>
+	<p>{{l10n.text.gettext "Log in"}}</p>
+	<p>{{l10n.text.gettext "Email"}}</p>
+	<p>{{l10n.text.gettext "Password"}}</p>
+	<p>{{l10n.text.gettext "Confirm Password"}}</p>
+	<p>{{l10n.text.gettext "First Name"}}</p>
+	<p>{{l10n.text.gettext "Last Name"}}</p>
+</div>
+{{> footer}}
