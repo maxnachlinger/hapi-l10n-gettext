@@ -31,20 +31,6 @@ server.route({
 		reply.view('index', {title: server.methods.gettext("Log in")});
 	}
 });
-server.route({
-	method: 'GET',
-	path: '/locale/{_locale}',
-	config: {
-		validate: {
-			params: {
-				_locale: Joi.string().required()
-			}
-		}
-	},
-	handler: function (request, reply) {
-		reply.redirect(request.info.referrer);
-	}
-});
 
 server.pack.register([{
 	plugin: require('good')

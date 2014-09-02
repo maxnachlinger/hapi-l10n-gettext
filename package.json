@@ -15,7 +15,8 @@
 		"hoek": "^2.4.1",
 		"locale": "0.0.17",
 		"node-gettext": "^0.2.14",
-		"recursive-readdir": "^1.2.0"
+		"recursive-readdir": "^1.2.0",
+		"joi": "^4.6.2"
 	},
 	"devDependencies": {
 		"tape": "^2.14.0"
