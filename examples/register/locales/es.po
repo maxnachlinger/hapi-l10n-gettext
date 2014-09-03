@@ -1,25 +1,25 @@
 msgid ""
 msgstr ""
-"Language: zh_TW\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Log in"
-msgstr "登入"
+msgid "Register"
+msgstr "Registrar"
 
 msgid "Email"
-msgstr "電郵"
+msgstr "Correo electrónico"
 
 msgid "Password"
-msgstr "密碼"
+msgstr "Contraseña"
 
 msgid "Confirm Password"
-msgstr "確認密碼"
+msgstr "Confirmar Contraseña"
 
 msgid "First Name"
-msgstr "名字"
+msgstr "Primer Nombre"
 
 msgid "Last Name"
-msgstr "姓氏"
+msgstr "Apellido"

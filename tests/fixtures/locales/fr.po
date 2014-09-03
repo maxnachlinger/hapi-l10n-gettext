@@ -1,0 +1,25 @@
+msgid ""
+msgstr ""
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Register"
+msgstr "S’enregistrer"
+
+msgid "Email"
+msgstr "Adresse électronique"
+
+msgid "Password"
+msgstr "Mot de passe"
+
+msgid "Confirm Password"
+msgstr "Confirmer le mot de passe"
+
+msgid "First Name"
+mmsgstr "Prénom"
+
+msgid "Last Name"
+mmsgstr "Nom"

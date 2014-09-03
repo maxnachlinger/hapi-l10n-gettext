@@ -6,8 +6,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-msgid "Log in"
-msgstr "Log in"
+msgid "Register"
+msgstr "Register"
 
 msgid "Email"
 msgstr "Email"

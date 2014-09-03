@@ -28,17 +28,17 @@ server.route({
 	method: 'GET',
 	path: '/',
 	handler: function (request, reply) {
-		reply.view('index', {title: request.plugins.l10n.text.gettext("Log in")});
+		reply.view('index', {title: request.plugins.l10n.text.gettext("Register")});
 	}
 });
 
 server.pack.register([{
 	plugin: require('good')
 }, {
-	plugin: require('../../').hapiJsPlugin,
+	plugin: require('../../'),
 	options: {
 		cookieName: '_locale',
-		l10nDirectory: path.join(__dirname, '/../shared/locales'),
+		l10nDirectory: path.resolve(__dirname, 'locales'),
 		defaultLocale: 'en'
 	}
 }], function (err) {
