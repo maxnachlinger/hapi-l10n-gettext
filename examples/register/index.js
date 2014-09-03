@@ -39,7 +39,10 @@ server.pack.register([{
 	options: {
 		cookieName: '_locale',
 		l10nDirectory: path.resolve(__dirname, 'locales'),
-		defaultLocale: 'en'
+		defaultLocale: 'en',
+		ignoreL10nFunction: function(reqPath) {
+			return ~reqPath.indexOf('/public/') || ~reqPath.indexOf('favicon');
+		}
 	}
 }], function (err) {
 	if (err) throw err;
