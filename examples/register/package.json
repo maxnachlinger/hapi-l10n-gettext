@@ -9,5 +9,11 @@
     "handlebars": "^2.0.0-beta.1",
     "hapi": "^6.2.0",
     "joi": "^4.6.2"
+  },
+  "devDependencies": {
+    "gettext-parser": "^0.2.0",
+    "grunt": "^0.4.5",
+    "grunt-jsxgettext": "0.0.3",
+    "node-pseudo-l10n": "0.0.2"
   }
 }

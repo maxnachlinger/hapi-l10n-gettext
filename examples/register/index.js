@@ -5,7 +5,7 @@ var Joi = require('joi');
 var server = new Hapi.Server('0.0.0.0', process.env.PORT || 8080, {
 	views: {
 		engines: {
-			html: require('handlebars')
+			hbs: require('handlebars')
 		},
 		path: path.join(__dirname, 'views/templates'),
 		partialsPath: path.join(__dirname, 'views/partials')
