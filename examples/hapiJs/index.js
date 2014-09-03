@@ -28,7 +28,7 @@ server.route({
 	method: 'GET',
 	path: '/',
 	handler: function (request, reply) {
-		reply.view('index', {title: server.methods.gettext("Log in")});
+		reply.view('index', {title: request.plugins.l10n.text.gettext("Log in")});
 	}
 });
 

@@ -7,14 +7,10 @@ test("setup returns locales found in PO files (and language names from language-
 	t.test('Setup', setup);
 
 	t.test("Tests", function(t) {
-		var localeCodes = languageLoader.locales.map(function(locale) {
-			return locale.code;
-		});
-
+		var localeCodes = languageLoader.getLocaleCodes();
 		['en', 'zh-cn', 'zh-tw'].forEach(function(locale) {
 			t.ok(~localeCodes.indexOf(locale), "Found " + locale);
 		});
-
 		t.end();
 	});
 
