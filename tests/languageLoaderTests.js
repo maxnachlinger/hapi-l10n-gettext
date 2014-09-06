@@ -43,9 +43,9 @@ test("getHeaderLocale can parse a complex accept-language header value", functio
 });
 
 function setup(t) {
-	languageLoader.setup(path.resolve(__dirname, 'fixtures/locales'), function (err, locales) {
-		t.notOk(err, "Setup should not return an error, received: " + util.format(err));
-		t.ok(locales, "Setup returned locales: " + util.format(locales));
+	languageLoader.setup(path.resolve(__dirname, 'fixtures/locales'), function (err, result) {
+		t.notOk(err, "Setup should not return an error, received: " + (err || {}).stack);
+		t.ok(result, "Setup returned locales: " + util.format(result.localeCodes));
 		t.end();
 	});
 }
