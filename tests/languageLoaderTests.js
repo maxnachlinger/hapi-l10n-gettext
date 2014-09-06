@@ -21,20 +21,20 @@ test("getHeaderLocale can parse a complex accept-language header value", functio
 	t.test('Setup', setup);
 
 	t.test("Tests", function(t) {
-		var headerValue = "en-US,en;q=0.8,zh-TW;q=0.6,zh;q=0.4,zh-CN;q=0.2";
-		var expectedLanguage = 'en';
+		var headerValue = "zh-TW,zh-CN;q=0.2,zh;q=0.8,en-US;q=0.6,en;q=0.4";
+		var expected = 'zh-tw';
 		var selectedLanguage = languageLoader.getHeaderLocale(headerValue);
-		t.equal(selectedLanguage, expectedLanguage, "If the user's first choice is supported, it will be returned.");
+		t.equal(selectedLanguage, expected, "If the user's first choice is supported, it will be returned.");
 
-		headerValue = "zh-TW,zh-CN;q=0.2,zh;q=0.8,en-US;q=0.6,en;q=0.4";
-		expectedLanguage = 'zh-tw';
+		headerValue = "test0,test1;q=0.8,zh-CN;q=0.6,en-US;q=0.4,en;q=0.2";
+		expected = 'zh-cn';
 		selectedLanguage = languageLoader.getHeaderLocale(headerValue);
-		t.equal(selectedLanguage, expectedLanguage, "If the user's first choice is supported, it will be returned.");
+		t.equal(selectedLanguage, expected, "If the user's third first choice is supported, it will be returned.");
 
 		headerValue = "test0,test1;q=0.8,test2;q=0.6,test3;q=0.4,zh-TW;q=0.2";
-		expectedLanguage = 'zh-tw';
+		expected = 'zh-tw';
 		selectedLanguage = languageLoader.getHeaderLocale(headerValue);
-		t.equal(selectedLanguage, expectedLanguage, "If only the user's last choice is supported, it will be returned.");
+		t.equal(selectedLanguage, expected, "If only the user's last choice is supported, it will be returned.");
 
 		t.end();
 	});
