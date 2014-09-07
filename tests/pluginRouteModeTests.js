@@ -3,7 +3,7 @@ var path = require('path');
 var test = require('tape');
 var index = require('../');
 
-test('Include-exclude mode can be setup', function(t) {
+test('Include-exclude routeMode can be setup', function(t) {
 	var exposed = {};
 	var plugIn = {
 		log: function() {},
@@ -27,12 +27,12 @@ test('Include-exclude mode can be setup', function(t) {
 		}]
 	};
 	index.register(plugIn, options, function() {
-		t.equal(exposed['mode'], index.modes.include | index.modes.exclude);
+		t.equal(exposed['routeMode'], index.routeModes.include | index.routeModes.exclude);
 		t.end();
 	});
 });
 
-test('Include mode can be setup', function(t) {
+test('Include routeMode can be setup', function(t) {
 	var exposed = {};
 	var plugIn = {
 		log: function() {},
@@ -52,12 +52,12 @@ test('Include mode can be setup', function(t) {
 		}]
 	};
 	index.register(plugIn, options, function() {
-		t.equal(exposed['mode'], index.modes.include);
+		t.equal(exposed['routeMode'], index.routeModes.include);
 		t.end();
 	});
 });
 
-test('Exclude mode can be setup', function(t) {
+test('Exclude routeMode can be setup', function(t) {
 	var exposed = {};
 	var plugIn = {
 		log: function() {},
@@ -77,12 +77,12 @@ test('Exclude mode can be setup', function(t) {
 		}]
 	};
 	index.register(plugIn, options, function() {
-		t.equal(exposed['mode'], index.modes.exclude);
+		t.equal(exposed['routeMode'], index.routeModes.exclude);
 		t.end();
 	});
 });
 
-test('Default mode can be setup', function(t) {
+test('Default routeMode can be setup', function(t) {
 	var exposed = {};
 	var plugIn = {
 		log: function() {},
@@ -98,7 +98,7 @@ test('Default mode can be setup', function(t) {
 		defaultLocale: 'en' // if the cookie is absent and no header is passed, this locale is used
 	};
 	index.register(plugIn, options, function() {
-		t.equal(exposed['mode'], index.modes.none);
+		t.equal(exposed['routeMode'], index.routeModes.all);
 		t.end();
 	});
 });

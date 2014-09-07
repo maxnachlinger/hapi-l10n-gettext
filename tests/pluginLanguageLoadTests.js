@@ -3,7 +3,7 @@ var path = require('path');
 var test = require('tape');
 var index = require('../');
 
-test('Returns lcale codes for all POs', function(t) {
+test('Returns locale codes for all POs', function(t) {
 	var exposed = {};
 	var plugIn = {
 		log: function() {},
@@ -45,7 +45,7 @@ test('Returns the test locale when no PO files found', function(t) {
 		[ 'test' ].forEach(function(locale) {
 			t.ok(~exposed['localeCodes'].indexOf(locale), "Found " + locale);
 		});
+		t.ok(exposed['dev']);
 		t.end();
 	});
 });
-
