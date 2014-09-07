@@ -3,7 +3,7 @@
 		win.onload = function () {
 			var selectPicker = win.document.getElementById('languageSelect');
 			selectPicker.addEventListener('change', function (event) {
-				win.document.location = "/_l10n/" + event.target.value;
+				win.document.location = "/locale/" + event.target.value;
 			});
 		};
 	})(window);

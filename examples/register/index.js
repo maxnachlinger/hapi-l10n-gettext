@@ -12,9 +12,9 @@ var server = new Hapi.Server('0.0.0.0', process.env.PORT || 8080, {
 	}
 });
 
-server.route({
+var assetRoute = {
 	path: '/public/{path*}',
-	method: 'GET',
+	method: 'get',
 	handler: {
 		directory: {
 			path: './public',
@@ -22,29 +22,51 @@ server.route({
 			index: false
 		}
 	}
-});
+};
+server.route(assetRoute);
 
-server.route({
-	method: 'GET',
-	path: '/',
-	handler: function (request, reply) {
-		reply.view('index', {title: request.plugins.l10n.text.gettext("Register")});
-	}
-});
-
-server.pack.register([{
-	plugin: require('good')
-}, {
-	plugin: require('../../'),
-	options: {
-		cookieName: '_locale',
-		l10nDirectory: path.resolve(__dirname, 'locales'),
-		defaultLocale: 'en',
-		ignoreL10nFunction: function(reqPath) {
-			return ~reqPath.indexOf('/public/') || ~reqPath.indexOf('favicon');
+var routes = [
+	{
+		method: 'GET',
+		path: '/',
+		handler: function (request, reply) {
+			reply.view('index', {title: request.plugins.l10n.text.gettext("Register")});
 		}
 	}
-}], function (err) {
+];
+server.route(routes);
+
+var localeSetRoute = {
+	method: 'GET',
+	path: '/locale/{_locale}',
+	config: {
+		validate: {
+			params: {
+				_locale: Joi.string().required()
+			}
+		},
+		handler: function (request, reply) {
+			reply.redirect(request.info.referrer).state('_locale', request.params._locale);
+		}
+	}
+};
+server.route(localeSetRoute);
+
+server.pack.register([
+	{
+		plugin: require('good')
+	},
+	{
+		plugin: require('../../'),
+		options: {
+			cookieName: '_locale',
+			l10nDirectory: path.resolve(__dirname, 'locales'),
+			defaultLocale: 'en',
+			excludeRoutes: [assetRoute, localeSetRoute],
+			includedRoutes: routes
+		}
+	}
+], function (err) {
 	if (err) throw err;
 	server.start(function () {
 		server.log('info', 'Server running at: ' + server.info.uri);
