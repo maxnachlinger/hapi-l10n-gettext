@@ -1,7 +1,5 @@
 <script>
 	function onLanguageClick(languageCode) {
-		console.log(languageCode);
-
 		window.document.location = "/locale/" + languageCode;
 	}
 </script>
@@ -10,18 +8,15 @@
 	<ul class="header-dropdown-list hidden-xs">
 		<li>
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				<img src="public/img/blank.gif" class="flag flag-{{locale}}">
-				<span> {{locale}}</span> <i class="fa fa-angle-down"></i>
+				<img src="public/img/blank.gif" class="flag flag-{{selectedLocale.locale}}">
+				<span> {{selectedLocale.name}}</span> <i class="fa fa-angle-down"></i>
 			</a>
-
 			<ul class="dropdown-menu pull-right" role="menu">
-
-						{{#each locales}}
-				  <li>
-					  <a onclick="onLanguageClick('{{locale}}')" href="javascript:void(0);"><img src="public/img/blank.gif" class="flag flag-{{locale}}"> {{name}}</a>
-				  </li>
-						{{/each}}
-
+				{{#each locales}}
+					<li>
+						<a onclick="onLanguageClick('{{locale}}')" href="javascript:void(0);"><img src="public/img/blank.gif" class="flag flag-{{locale}}"> {{name}}</a>
+					</li>
+				{{/each}}
 			</ul>
 		</li>
 	</ul>

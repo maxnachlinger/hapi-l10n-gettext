@@ -6,6 +6,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
+msgid "Please complete this form"
+msgstr "このフォームに記入してください"
+
 msgid "Register"
 msgstr "登録"
 

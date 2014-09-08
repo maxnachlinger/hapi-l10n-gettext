@@ -8,7 +8,7 @@
 			<header role="heading">
 				<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
 
-				<h2>Please Enter Information:</h2>
+				<h2>{{gettext "Please complete this form"}}</h2>
 
 				<span class="jarviswidget-loader"><i class="fa fa-refresh fa-spin"></i></span></header>
 
@@ -35,7 +35,7 @@
 								<label class="col-md-3 control-label">{{gettext "First Name"}}</label>
 
 								<div class="col-md-9">
-									<input class="form-control" placeholder="Default Text Field" type="text">
+									<input class="form-control" type="text">
 								</div>
 							</div>
 
@@ -44,7 +44,7 @@
 								<label class="col-md-3 control-label">{{gettext "Last Name"}}</label>
 
 								<div class="col-md-9">
-									<input class="form-control" placeholder="Default Text Field" type="text">
+									<input class="form-control" type="text">
 								</div>
 							</div>
 
@@ -53,7 +53,7 @@
 								<label class="col-md-3 control-label">{{gettext "Email"}}</label>
 
 								<div class="col-md-9">
-									<input class="form-control" placeholder="Default Text Field" type="text">
+									<input class="form-control" type="text">
 								</div>
 							</div>
 
@@ -62,8 +62,8 @@
 								<label class="col-md-3 control-label">{{gettext "Password"}}</label>
 
 								<div class="col-md-9">
-									<input class="form-control" placeholder="Password field" type="password"
-									       value="mypassword">
+									<input class="form-control" type="password"
+									       value="">
 								</div>
 							</div>
 
@@ -72,8 +72,8 @@
 								<label class="col-md-3 control-label">{{gettext "Confirm Password"}}</label>
 
 								<div class="col-md-9">
-									<input class="form-control" placeholder="Password field" type="password"
-									       value="mypassword">
+									<input class="form-control" type="password"
+									       value="">
 								</div>
 							</div>
 
@@ -85,7 +85,7 @@
 								<div class="col-md-12">
 									<button class="btn btn-primary" type="submit">
 										<i class="fa fa-save"></i>
-										Register
+										{{gettext "Register"}}
 									</button>
 								</div>
 							</div>

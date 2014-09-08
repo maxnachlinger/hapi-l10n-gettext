@@ -48,7 +48,7 @@ request.l10n = {
     npgettext // get singular or plural text within a context
     // An array of locales found in the parsed PO/MO files
     locales: [{locale: 'en', name: 'English', selected: true}],
-    locale: 'en', // the currently selected locale as a string
+    selectedLocale: {locale: 'en', name: 'English', selected: true}, // the currently selected locale
     // whether or not PO/MO files were found
     devMode: false
 }
@@ -58,7 +58,7 @@ request.l10n = {
 ```javascript
 // An array of locales found in the parsed PO/MO files
 locales: [{locale: 'en', name: 'English', selected: true}]
-locale: 'en'  // the currently selected locale as a string
+selectedLocale: {locale: 'en', name: 'English', selected: true}, // the currently selected locale
 gettext, // get a bit of text
 pgettex, // get text within a context
 ngettext, // get singular or plural text
