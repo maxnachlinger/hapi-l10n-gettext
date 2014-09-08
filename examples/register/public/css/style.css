@@ -1,26 +1,7 @@
-.language-outer {
-	position: absolute;
-	width: 100%;
-	top: 10px;
-	display: none;
+html {
+	background-color: slategrey;
 }
 
-.language-btn {
-	border-radius: 2px !important;
-	font-weight: bold;
-}
-
-.language-btn .caret {
-	border-top-color: gray;
-}
-
-.language-outer .dropdown-menu {
-	border-radius: 2px !important;
-}
-
-.language-outer .bootstrap-select.btn-group .btn .filter-option {
-	padding-top: 1px;
-	padding-left: 20px;
-	background: url('public/img/globe.png') no-repeat;
-	left: 5px;
+#header>:first-child, aside {
+	width: 420px;
 }

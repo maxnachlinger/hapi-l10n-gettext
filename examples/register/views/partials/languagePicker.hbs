@@ -1,17 +1,28 @@
 <script>
-	(function (win) {
-		win.onload = function () {
-			var selectPicker = win.document.getElementById('languageSelect');
-			selectPicker.addEventListener('change', function (event) {
-				win.document.location = "/locale/" + event.target.value;
-			});
-		};
-	})(window);
+	function onLanguageClick(languageCode) {
+		console.log(languageCode);
+
+		window.document.location = "/locale/" + languageCode;
+	}
 </script>
-<div>
-	<select id="languageSelect" class="form-element">
-		{{#each locales}}
-		<option value="{{locale}}"{{#if selected}} selected{{/if}}>{{name}}</option>
-		{{/each}}
-	</select>
+
+<div class="pull-right">
+	<ul class="header-dropdown-list hidden-xs">
+		<li>
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				<img src="public/img/blank.gif" class="flag flag-{{locale}}">
+				<span> {{locale}}</span> <i class="fa fa-angle-down"></i>
+			</a>
+
+			<ul class="dropdown-menu pull-right" role="menu">
+
+						{{#each locales}}
+				  <li>
+					  <a onclick="onLanguageClick('{{locale}}')" href="javascript:void(0);"><img src="public/img/blank.gif" class="flag flag-{{locale}}"> {{name}}</a>
+				  </li>
+						{{/each}}
+
+			</ul>
+		</li>
+	</ul>
 </div>
