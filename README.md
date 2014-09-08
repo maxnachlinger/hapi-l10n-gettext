@@ -41,13 +41,11 @@ server.pack.register([
 ```
 ### Localization methods provided to JS code
 ```javascript
-request.plugins.l10n = {
-    text: {
-        gettext, // get a bit of text
-        pgettex, // get text within a context
-        ngettext, // get singular or plural text
-        npgettext // get singular or plural text within a context
-    },
+request.l10n = {
+    gettext, // get a bit of text
+    pgettex, // get text within a context
+    ngettext, // get singular or plural text
+    npgettext // get singular or plural text within a context
     // An array of locales found in the parsed PO/MO files
     locales: [{locale: 'en', name: 'English', selected: true}],
     locale: 'en', // the currently selected locale as a string
@@ -56,6 +54,7 @@ request.plugins.l10n = {
 }
 ```
 ### Localization methods provided to view templates
+(Added to response.source.context)
 ```javascript
 // An array of locales found in the parsed PO/MO files
 locales: [{locale: 'en', name: 'English', selected: true}]

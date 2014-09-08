@@ -30,7 +30,7 @@ var routes = [
 		method: 'GET',
 		path: '/',
 		handler: function (request, reply) {
-			reply.view('index', {title: request.plugins.l10n.text.gettext("Register")});
+			reply.view('index', {title: request.l10n.gettext("Register")});
 		}
 	}
 ];
