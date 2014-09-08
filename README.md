@@ -64,5 +64,7 @@ pgettex, // get text within a context
 ngettext, // get singular or plural text
 npgettext // get singular or plural text within a context
 ```
-
 There's also an [example app](examples/register) to get more of an idea how to use this plug-in.
+
+## Contributors
+[Here's a list, thanks for your help!](graphs/contributors)
