@@ -10,7 +10,7 @@ A localization plug-in for HapiJS
 ```
 npm i hapi-l10n-gettext
 ```
-### Usage:
+### Plug-in options:
 ```javascript
 // register as you would any other hapi plug-in
 server.pack.register([
@@ -18,7 +18,7 @@ server.pack.register([
 	{
 		plugin: require('hapi-l10n-gettext'),
 		options: {
-			 // the name of the cookie this plug-in will set to store locale
+			// the name of the cookie this plug-in will set to store locale
 			cookieName: '_locale',
 			// optional: where your PO/MO files live, if no filesa are found, a debugging 
 			// "test" locale will be used.
