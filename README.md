@@ -10,7 +10,7 @@ A localization plug-in for HapiJS
 ```
 npm i hapi-l10n-gettext
 ```
-### Plug-in options:
+### Plug-in options and setup:
 ```javascript
 // register as you would any other hapi plug-in
 server.pack.register([
@@ -39,4 +39,29 @@ server.pack.register([
 	});
 });
 ```
-
+### Localization methods provided to JS code
+```javascript
+request.plugins.l10n = {
+	text: {
+		gettext, // get a bit of text
+		pgettex, // get text within a context
+		ngettext, // get singular or plural text
+		npgettext // get singular or plural text within a context
+	},
+	// An array of locales found in the parsed PO/MO files
+	locales: [{locale: 'en', name: 'English', selected: true}],
+	locale: 'en', // the currently selected locale as a string
+	// wether or not PO/MO files were found
+	devMode: false
+}
+```
+### Localization methods provided to view templates
+```javascript
+// An array of locales found in the parsed PO/MO files
+locales: [{locale: 'en', name: 'English', selected: true}]
+locale: 'en'  // the currently selected locale as a string
+gettext, // get a bit of text
+pgettex, // get text within a context
+ngettext, // get singular or plural text
+npgettext // get singular or plural text within a context
+```
