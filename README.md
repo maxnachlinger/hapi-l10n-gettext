@@ -11,4 +11,25 @@ A localization plug-in for HapiJS
 npm i hapi-l10n-gettext
 ```
 ### Usage:
-Coming soon. No really. Soon.
+```javascript
+// register the plug-in
+
+server.pack.register([
+// additional plug-ins here
+	{
+		plugin: require('hapi-l10n-gettext'),
+		options: {
+			cookieName: '_locale',
+			l10nDirectory: path.resolve(__dirname, 'locales'),
+			defaultLocale: 'en',
+			excludedRoutes: [assetRoute],
+			includedRoutes: appRoutes
+		}
+	}
+], function (err) {
+	if (err) throw err;
+	server.start(function () {
+		server.log('info', 'Server running at: ' + server.info.uri);
+	});
+});
+```
