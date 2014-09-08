@@ -1,10 +1,26 @@
 {
 	"name": "hapi-l10n-gettext",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"description": "A hapijs plug-in for l10n via gettext",
 	"main": "lib/index.js",
 	"scripts": {
 		"test": "tape tests/*.js"
+	},
+	"homepage": "https://github.com/maxnachlinger/hapi-l10n-gettext",
+	"repository": {
+		"url": "https://github.com/maxnachlinger/hapi-l10n-gettext.git",
+		"type": "git"
+	},
+	"keywords": [
+		"hapi",
+		"localization",
+		"internationalization",
+		"gettext",
+		"l10n",
+		"i18n"
+	],
+	"bugs": {
+		"url": "https://github.com/maxnachlinger/hapi-l10n-gettext/issues"
 	},
 	"author": "Max Nachlinger <max@somewhere.com>",
 	"license": "ISC",
