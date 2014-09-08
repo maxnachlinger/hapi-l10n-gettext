@@ -12,10 +12,9 @@ npm i hapi-l10n-gettext
 ```
 ### Usage:
 ```javascript
-// register the plug-in
-
+// register as you would any other hapi plug-in
 server.pack.register([
-// additional plug-ins here
+	// additional plug-ins here
 	{
 		plugin: require('hapi-l10n-gettext'),
 		options: {
