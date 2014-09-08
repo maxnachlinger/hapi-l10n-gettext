@@ -62,7 +62,7 @@ server.pack.register([
 			cookieName: '_locale',
 			l10nDirectory: path.resolve(__dirname, 'locales'),
 			defaultLocale: 'en',
-			excludeRoutes: [assetRoute, localeSetRoute],
+			excludedRoutes: [assetRoute, localeSetRoute],
 			includedRoutes: routes
 		}
 	}
