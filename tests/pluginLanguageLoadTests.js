@@ -19,7 +19,7 @@ test('Returns the test locale when no PO files found', function(t) {
 	};
 	require('../').register(plugIn, options, function() {
 		[ 'test' ].forEach(function(locale) {
-			t.ok(~exposed['locales'].indexOf(locale), "Found " + locale);
+			t.ok(~exposed['localeCodes'].indexOf(locale), "Found " + locale);
 		});
 		t.ok(exposed['dev']);
 		t.end();
@@ -50,7 +50,7 @@ test('Returns locale codes for all POs', function(t) {
 	};
 	require('../').register(plugIn, options, function() {
 		[ 'de', 'en', 'es', 'fr', 'it', 'ja', 'pt-br', 'zh-cn', 'zh-tw' ].forEach(function(locale) {
-			t.ok(~exposed['locales'].indexOf(locale), "Found " + locale);
+			t.ok(~exposed['localeCodes'].indexOf(locale), "Found " + locale);
 		});
 		t.end();
 	});
