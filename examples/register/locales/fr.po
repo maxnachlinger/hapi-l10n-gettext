@@ -22,7 +22,7 @@ msgid "Confirm Password"
 msgstr "Confirmer le mot de passe"
 
 msgid "First Name"
-mmsgstr "Prénom"
+msgstr "Prénom"
 
 msgid "Last Name"
-mmsgstr "Nom"
+msgstr "Nom"
