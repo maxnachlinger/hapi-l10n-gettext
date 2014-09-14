@@ -5,7 +5,7 @@ A localization plug-in for HapiJS
 [![NPM](https://nodei.co/npm/hapi-l10n-gettext.png)](https://nodei.co/npm/hapi-l10n-gettext/)
 
 [![Build Status](https://travis-ci.org/maxnachlinger/hapi-l10n-gettext.png?branch=master)](https://travis-ci.org/maxnachlinger/hapi-l10n-gettext)
-[![Dependency Status](http://img.shields.io/david/maxnachlinger/hapi-l10n-gettext.svg)](http://img.shields.io/david/maxnachlinger/hapi-l10n-gettext.svg)
+[![Dependency Status](https://david-dm.org/maxnachlinger/hapi-l10n-gettext.png)](https://david-dm.org/maxnachlinger/hapi-l10n-gettext)
 
 ### Installation:
 ```
