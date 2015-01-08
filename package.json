@@ -1,6 +1,6 @@
 {
 	"name": "hapi-l10n-gettext",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"description": "A hapijs plug-in for l10n via gettext",
 	"main": "lib/index.js",
 	"scripts": {
@@ -30,7 +30,8 @@
 		"hoek": "^2.4.1",
 		"node-gettext": "^0.2.14",
 		"recursive-readdir": "^1.2.0",
-		"sprintf-js": "0.0.7"
+		"sprintf-js": "0.0.7",
+    "accept-language-parser": "^1.0.2"
 	},
 	"devDependencies": {
 		"tape": "^2.14.0"
