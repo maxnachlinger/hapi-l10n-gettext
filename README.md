@@ -1,8 +1,7 @@
 hapi-l10n-gettext
 =================
 A localization plug-in for HapiJS
-
-[![NPM](https://nodei.co/npm/hapi-l10n-gettext.svg)](https://nodei.co/npm/hapi-l10n-gettext/)
+https://www.npmjs.com/package/hapi-l10n-gettext
 
 [![Build Status](https://travis-ci.org/maxnachlinger/hapi-l10n-gettext.svg?branch=master)](https://travis-ci.org/maxnachlinger/hapi-l10n-gettext)
 [![Dependency Status](https://david-dm.org/maxnachlinger/hapi-l10n-gettext.svg)](https://david-dm.org/maxnachlinger/hapi-l10n-gettext)
