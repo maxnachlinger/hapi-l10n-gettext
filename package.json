@@ -25,15 +25,15 @@
 	"author": "Max Nachlinger <max@somewhere.com>",
 	"license": "ISC",
 	"dependencies": {
-		"async": "^0.9.0",
-		"gettext-parser": "^0.2.0",
-		"hoek": "^2.4.1",
-		"node-gettext": "^0.2.14",
-		"recursive-readdir": "^1.2.0",
-		"sprintf-js": "0.0.7",
+		"async": "^2.1.4",
+		"gettext-parser": "^1.2.1",
+		"hoek": "^4.1.0",
+		"node-gettext": "^1.1.0",
+		"recursive-readdir": "^2.1.0",
+		"sprintf-js": "1.0.3",
 		"accept-language-parser": "^1.0.2"
 	},
 	"devDependencies": {
-		"tape": "^2.14.0"
+		"tape": "^4.6.3"
 	}
 }
