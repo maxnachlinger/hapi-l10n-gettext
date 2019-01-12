@@ -4,7 +4,7 @@ A localization plug-in for HapiJS
 https://www.npmjs.com/package/hapi-l10n-gettext
 
 [![Build Status](https://travis-ci.org/maxnachlinger/hapi-l10n-gettext.svg?branch=master)](https://travis-ci.org/maxnachlinger/hapi-l10n-gettext)
-[![Dependency Status](https://david-dm.org/maxnachlinger/hapi-l10n-gettext.svg)](https://david-dm.org/maxnachlinger/hapi-l10n-gettext)
+[![Dependency Status](https://david-dm.org/maxnachlinger/hapi-l10n-gettext.svg)](https://david-dm.org/maxnachlinger/hapi-l10n-gettext) [![Greenkeeper badge](https://badges.greenkeeper.io/maxnachlinger/hapi-l10n-gettext.svg)](https://greenkeeper.io/)
 
 ### Installation:
 ```

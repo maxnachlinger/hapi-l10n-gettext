@@ -5,10 +5,10 @@
 	"author": "",
 	"license": "ISC",
 	"dependencies": {
-		"good": "^2.2.0",
-		"handlebars": "^2.0.0-beta.1",
-		"hapi": "^6.2.0",
-		"hoek": "^2.4.1",
-		"joi": "^4.6.2"
+		"good": "^8.1.1",
+		"handlebars": "^4.0.12",
+		"hapi": "^17.8.1",
+		"hoek": "^6.1.2",
+		"joi": "^14.3.1"
 	}
 }
